@@ -11,5 +11,6 @@ enum AppRoute: Hashable {
     case splash
     case settings
     case landing
-    case game
+    case addPlayers
+    case game(team1: Team, team2: Team)
 }

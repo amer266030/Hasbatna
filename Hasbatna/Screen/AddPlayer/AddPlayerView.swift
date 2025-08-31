@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct AddPlayerView: View {
+    @Bindable var vm = AddPlayerVM()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScreenContainer {
+            HStack(alignment: .firstTextBaseline, spacing: 16) {
+                TeamColumnView(team: $vm.team1) {
+                    
+                }
+                TeamColumnView(team: $vm.team2) {
+                    
+                }
+            }
+            
+            SecondaryBtn(title: "Randomize Teams") {
+                vm.randomizeTeams()
+            }
+            
+            PrimaryButton(title: "Begin") {
+                vm.startGame()
+            }
+        }
     }
 }
 

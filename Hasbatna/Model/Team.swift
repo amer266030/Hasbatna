@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-class Team {
+class Team: Hashable {
     var name: String
     var players: [Player] = []
     

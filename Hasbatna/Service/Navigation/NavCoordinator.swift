@@ -26,6 +26,7 @@ struct NavCoordinator: View {
         switch route {
         case .splash: SplashView()
         case .landing: LandingView()
+        case .addPlayers: AddPlayerView()
         case .game: GameView()
         case .settings: SettingsView()
         }

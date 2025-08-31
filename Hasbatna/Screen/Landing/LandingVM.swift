@@ -14,6 +14,6 @@ class LandingVM {
     
     @MainActor
     func startGame() {
-        x.navMgr.push(.game)
-    }   
+        x.navMgr.push(.addPlayers)
+    }
 }

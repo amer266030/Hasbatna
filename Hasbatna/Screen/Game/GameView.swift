@@ -18,6 +18,10 @@ struct GameView: View {
                         
                     }
                 }
+                
+                Section("Score") {
+                    
+                }
             }
         }
     }
