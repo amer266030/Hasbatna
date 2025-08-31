@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct SplashView: View {
+    @Bindable var vm = SplashVM()
+    
     var body: some View {
         ScreenContainer {
             Image("circle.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         }
+        .onAppear { vm.navigateToLanding() }
     }
 }
 

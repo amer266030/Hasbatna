@@ -6,3 +6,24 @@
 //
 
 import Foundation
+import Observation
+
+@Observable
+class GameVM {
+    private let x = DIContainer.shared
+    
+    
+    func addScore() {
+        
+    }
+    
+    func gameEneded() {
+        
+    }
+    
+    
+    @MainActor
+    func dismiss() {
+        x.navMgr.pop()
+    }
+}

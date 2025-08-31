@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LandingView: View {
+    @Bindable var vm = LandingVM()
+    
     var body: some View {
         ScreenContainer {
             Text("Title")
@@ -17,10 +19,8 @@ struct LandingView: View {
                 .aspectRatio(contentMode: .fit)
             Spacer()
             
-            Button {
-                
-            } label: {
-                Text("New")
+            PrimaryButton(title: "New") {
+                vm.startGame()
             }
         }
     }

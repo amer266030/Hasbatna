@@ -24,6 +24,15 @@ struct ScreenContainer<Content: View>: View {
                 content
             }
             .padding(24)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        NavMgr.shared.push(.settings)
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+                }
+            }
         }
     }
 }

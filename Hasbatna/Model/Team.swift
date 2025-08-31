@@ -16,8 +16,4 @@ class Team {
     init(name: String) {
         self.name = name
     }
-    
-    func addPlayers(players: [Player]) {
-        self.players = players
-    }
 }

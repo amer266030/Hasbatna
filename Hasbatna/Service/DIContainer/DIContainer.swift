@@ -10,7 +10,7 @@ import Foundation
 class DIContainer {
     static let shared = DIContainer()
     lazy var navMgr = NavMgr.shared
-    
+    lazy var popupMgr = PopupMgr.shared
     
     private init() {}
     

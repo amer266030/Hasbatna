@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  ProfileView.swift
 //  Hasbatna
 //
 //  Created by Amer Alyusuf on 31/08/2025.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ProfileView: View {
     var body: some View {
         ScreenContainer {
             
@@ -16,5 +16,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    ProfileView()
 }

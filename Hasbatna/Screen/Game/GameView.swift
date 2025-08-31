@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct GameView: View {
+    @Bindable var vm = GameVM()
+    
     var body: some View {
         ScreenContainer {
-            
+            List {
+                Section("Team") {
+                    HStack {
+                        
+                    }
+                }
+            }
         }
     }
 }

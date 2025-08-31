@@ -10,5 +10,10 @@ import Observation
 
 @Observable
 class LandingVM {
+    private let x = DIContainer.shared
     
+    @MainActor
+    func startGame() {
+        x.navMgr.push(.game)
+    }   
 }

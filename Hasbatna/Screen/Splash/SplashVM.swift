@@ -13,9 +13,11 @@ class SplashVM {
     private let x = DIContainer.shared
     
     @MainActor
-    func startNewGame() {
-        x.navMgr.push(.game)
+    func navigateToLanding() {
+        Task {
+            try await Task.sleep(for: .seconds(2))
+            x.navMgr.push(.landing)
+        }
     }
-    
 }
 
